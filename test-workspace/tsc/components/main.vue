@@ -59,7 +59,7 @@ declare const ScriptSetupGenericExact: <T, >(
 		props: {
 			onBar?: ((data: T) => any) | undefined;
 			foo: T;
-		} & import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps & Record<string, unknown>,
+		} & import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps,
 		attrs: any,
 		slots: { default?: (props: T) => any; },
 		emit: { (e: 'bar', data: T): void; },

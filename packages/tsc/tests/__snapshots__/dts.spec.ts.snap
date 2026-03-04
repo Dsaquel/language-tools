@@ -174,9 +174,7 @@ exports[`Input: generic/component.vue, Output: generic/component.vue.d.ts 1`] = 
     }) & {
         "onUpdate:title"?: (value: string) => any;
         onBar?: (data: number) => any;
-    }> & (typeof globalThis extends {
-        __VLS_PROPS_FALLBACK: infer P;
-    } ? P : {});
+    }>;
     expose: (exposed: import("vue").ShallowUnwrapRef<{
         baz: number;
     }>) => void;
@@ -209,9 +207,7 @@ exports[`Input: generic/custom-extension-component.cext, Output: generic/custom-
     }) & {
         "onUpdate:title"?: (value: string) => any;
         onBar?: (data: number) => any;
-    }> & (typeof globalThis extends {
-        __VLS_PROPS_FALLBACK: infer P;
-    } ? P : {});
+    }>;
     expose: (exposed: import("vue").ShallowUnwrapRef<{
         baz: number;
     }>) => void;
