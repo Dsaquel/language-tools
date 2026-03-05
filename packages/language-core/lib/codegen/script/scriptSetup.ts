@@ -96,7 +96,7 @@ export function* generateGeneric(
 			+ ` & import('${vueCompilerOptions.lib}').ComponentCustomProps`
 		: `globalThis.JSX.IntrinsicAttributes`;
 	if (propTypes.length) {
-		yield ` & ${ctx.localTypes.PrettifyLocal}<${propTypes.join(` & `)}>`;
+		yield ` & ${propTypes.join(` & `)}`;
 	}
 	yield endOfLine;
 	yield `	expose: (exposed: `;
